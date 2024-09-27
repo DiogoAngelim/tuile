@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfunciDU_2_column_with_sign_upfuncqCg_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfunctJA_2_column_with_sign_upfuncPSE_editor_assets' );
 
-      function wpfunciDU_2_column_with_sign_upfuncqCg_editor_assets() {
+      function wpfunctJA_2_column_with_sign_upfuncPSE_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfunciDU_2_column_with_sign_upfuncqCg_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfunctJA_2_column_with_sign_upfuncPSE_block_assets' );
 
-    function wpfunciDU_2_column_with_sign_upfuncqCg_block_assets() {
+    function wpfunctJA_2_column_with_sign_upfuncPSE_block_assets() {
       $args = array(
         'handle' => 'wp-2-column-with-sign-up-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

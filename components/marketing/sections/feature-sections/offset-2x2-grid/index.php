@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncUPq_offset_2x2_gridfuncLMT_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncpBH_offset_2x2_gridfuncpPy_editor_assets' );
 
-      function wpfuncUPq_offset_2x2_gridfuncLMT_editor_assets() {
+      function wpfuncpBH_offset_2x2_gridfuncpPy_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncUPq_offset_2x2_gridfuncLMT_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncpBH_offset_2x2_gridfuncpPy_block_assets' );
 
-    function wpfuncUPq_offset_2x2_gridfuncLMT_block_assets() {
+    function wpfuncpBH_offset_2x2_gridfuncpPy_block_assets() {
       $args = array(
         'handle' => 'wp-offset-2x2-grid-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

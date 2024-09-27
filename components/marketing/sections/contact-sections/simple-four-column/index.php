@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfunctij_simple_four_columnfuncSpS_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncetx_simple_four_columnfuncNfR_editor_assets' );
 
-      function wpfunctij_simple_four_columnfuncSpS_editor_assets() {
+      function wpfuncetx_simple_four_columnfuncNfR_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfunctij_simple_four_columnfuncSpS_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncetx_simple_four_columnfuncNfR_block_assets' );
 
-    function wpfunctij_simple_four_columnfuncSpS_block_assets() {
+    function wpfuncetx_simple_four_columnfuncNfR_block_assets() {
       $args = array(
         'handle' => 'wp-simple-four-column-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

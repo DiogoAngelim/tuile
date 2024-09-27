@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncQqc_with_background_image_and_overlapping_cardsfuncnzs_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncYSA_with_background_image_and_overlapping_cardsfuncwdU_editor_assets' );
 
-      function wpfuncQqc_with_background_image_and_overlapping_cardsfuncnzs_editor_assets() {
+      function wpfuncYSA_with_background_image_and_overlapping_cardsfuncwdU_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncQqc_with_background_image_and_overlapping_cardsfuncnzs_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncYSA_with_background_image_and_overlapping_cardsfuncwdU_block_assets' );
 
-    function wpfuncQqc_with_background_image_and_overlapping_cardsfuncnzs_block_assets() {
+    function wpfuncYSA_with_background_image_and_overlapping_cardsfuncwdU_block_assets() {
       $args = array(
         'handle' => 'wp-with-background-image-and-overlapping-cards-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

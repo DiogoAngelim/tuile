@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncdND_two_columns_with_descriptionfunckKL_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfunctjg_two_columns_with_descriptionfuncJAe_editor_assets' );
 
-      function wpfuncdND_two_columns_with_descriptionfunckKL_editor_assets() {
+      function wpfunctjg_two_columns_with_descriptionfuncJAe_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncdND_two_columns_with_descriptionfunckKL_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfunctjg_two_columns_with_descriptionfuncJAe_block_assets' );
 
-    function wpfuncdND_two_columns_with_descriptionfunckKL_block_assets() {
+    function wpfunctjg_two_columns_with_descriptionfuncJAe_block_assets() {
       $args = array(
         'handle' => 'wp-two-columns-with-description-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

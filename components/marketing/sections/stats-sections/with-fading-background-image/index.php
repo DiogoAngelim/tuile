@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfunctqM_with_fading_background_imagefuncQCd_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncNgp_with_fading_background_imagefuncUQc_editor_assets' );
 
-      function wpfunctqM_with_fading_background_imagefuncQCd_editor_assets() {
+      function wpfuncNgp_with_fading_background_imagefuncUQc_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfunctqM_with_fading_background_imagefuncQCd_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncNgp_with_fading_background_imagefuncUQc_block_assets' );
 
-    function wpfunctqM_with_fading_background_imagefuncQCd_block_assets() {
+    function wpfuncNgp_with_fading_background_imagefuncUQc_block_assets() {
       $args = array(
         'handle' => 'wp-with-fading-background-image-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

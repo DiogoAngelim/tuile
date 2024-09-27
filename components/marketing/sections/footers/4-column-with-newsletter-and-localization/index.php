@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncbOl_4_column_with_newsletter_and_localizationfuncuVA_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfunciPK_4_column_with_newsletter_and_localizationfuncHRv_editor_assets' );
 
-      function wpfuncbOl_4_column_with_newsletter_and_localizationfuncuVA_editor_assets() {
+      function wpfunciPK_4_column_with_newsletter_and_localizationfuncHRv_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncbOl_4_column_with_newsletter_and_localizationfuncuVA_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfunciPK_4_column_with_newsletter_and_localizationfuncHRv_block_assets' );
 
-    function wpfuncbOl_4_column_with_newsletter_and_localizationfuncuVA_block_assets() {
+    function wpfunciPK_4_column_with_newsletter_and_localizationfuncHRv_block_assets() {
       $args = array(
         'handle' => 'wp-4-column-with-newsletter-and-localization-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

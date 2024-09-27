@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncvBy_split_two_tonefunckrV_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncXhw_split_two_tonefuncmlO_editor_assets' );
 
-      function wpfuncvBy_split_two_tonefunckrV_editor_assets() {
+      function wpfuncXhw_split_two_tonefuncmlO_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncvBy_split_two_tonefunckrV_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncXhw_split_two_tonefuncmlO_block_assets' );
 
-    function wpfuncvBy_split_two_tonefunckrV_block_assets() {
+    function wpfuncXhw_split_two_tonefuncmlO_block_assets() {
       $args = array(
         'handle' => 'wp-split-two-tone-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

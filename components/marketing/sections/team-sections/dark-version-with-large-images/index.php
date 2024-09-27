@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncxiA_dark_version_with_large_imagesfunckEb_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncwKG_dark_version_with_large_imagesfuncaCk_editor_assets' );
 
-      function wpfuncxiA_dark_version_with_large_imagesfunckEb_editor_assets() {
+      function wpfuncwKG_dark_version_with_large_imagesfuncaCk_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncxiA_dark_version_with_large_imagesfunckEb_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncwKG_dark_version_with_large_imagesfuncaCk_block_assets' );
 
-    function wpfuncxiA_dark_version_with_large_imagesfunckEb_block_assets() {
+    function wpfuncwKG_dark_version_with_large_imagesfuncaCk_block_assets() {
       $args = array(
         'handle' => 'wp-dark-version-with-large-images-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

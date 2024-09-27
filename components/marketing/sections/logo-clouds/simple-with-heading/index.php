@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncAXY_simple_with_headingfunceMy_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncRcU_simple_with_headingfuncYOQ_editor_assets' );
 
-      function wpfuncAXY_simple_with_headingfunceMy_editor_assets() {
+      function wpfuncRcU_simple_with_headingfuncYOQ_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncAXY_simple_with_headingfunceMy_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncRcU_simple_with_headingfuncYOQ_block_assets' );
 
-    function wpfuncAXY_simple_with_headingfunceMy_block_assets() {
+    function wpfuncRcU_simple_with_headingfuncYOQ_block_assets() {
       $args = array(
         'handle' => 'wp-simple-with-heading-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

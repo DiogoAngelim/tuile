@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncEJd_card_with_background_imagefuncqjD_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncVcn_card_with_background_imagefuncLZb_editor_assets' );
 
-      function wpfuncEJd_card_with_background_imagefuncqjD_editor_assets() {
+      function wpfuncVcn_card_with_background_imagefuncLZb_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncEJd_card_with_background_imagefuncqjD_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncVcn_card_with_background_imagefuncLZb_block_assets' );
 
-    function wpfuncEJd_card_with_background_imagefuncqjD_block_assets() {
+    function wpfuncVcn_card_with_background_imagefuncLZb_block_assets() {
       $args = array(
         'handle' => 'wp-card-with-background-image-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

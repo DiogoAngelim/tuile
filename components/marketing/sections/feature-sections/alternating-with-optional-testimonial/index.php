@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncoCV_alternating_with_optional_testimonialfuncjNm_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncFkO_alternating_with_optional_testimonialfuncHYB_editor_assets' );
 
-      function wpfuncoCV_alternating_with_optional_testimonialfuncjNm_editor_assets() {
+      function wpfuncFkO_alternating_with_optional_testimonialfuncHYB_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncoCV_alternating_with_optional_testimonialfuncjNm_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncFkO_alternating_with_optional_testimonialfuncHYB_block_assets' );
 
-    function wpfuncoCV_alternating_with_optional_testimonialfuncjNm_block_assets() {
+    function wpfuncFkO_alternating_with_optional_testimonialfuncHYB_block_assets() {
       $args = array(
         'handle' => 'wp-alternating-with-optional-testimonial-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

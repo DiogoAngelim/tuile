@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfunckJw_simple_center_brandedfuncGeA_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncogh_simple_center_brandedfuncwbL_editor_assets' );
 
-      function wpfunckJw_simple_center_brandedfuncGeA_editor_assets() {
+      function wpfuncogh_simple_center_brandedfuncwbL_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfunckJw_simple_center_brandedfuncGeA_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncogh_simple_center_brandedfuncwbL_block_assets' );
 
-    function wpfunckJw_simple_center_brandedfuncGeA_block_assets() {
+    function wpfuncogh_simple_center_brandedfuncwbL_block_assets() {
       $args = array(
         'handle' => 'wp-simple-center-branded-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncdRP_side_by_sidefuncLCG_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncmeK_side_by_sidefuncEvy_editor_assets' );
 
-      function wpfuncdRP_side_by_sidefuncLCG_editor_assets() {
+      function wpfuncmeK_side_by_sidefuncEvy_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncdRP_side_by_sidefuncLCG_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncmeK_side_by_sidefuncEvy_block_assets' );
 
-    function wpfuncdRP_side_by_sidefuncLCG_block_assets() {
+    function wpfuncmeK_side_by_sidefuncEvy_block_assets() {
       $args = array(
         'handle' => 'wp-side-by-side-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

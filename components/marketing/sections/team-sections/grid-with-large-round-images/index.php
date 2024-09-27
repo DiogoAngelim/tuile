@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncsDd_grid_with_large_round_imagesfuncvbT_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncOjV_grid_with_large_round_imagesfuncRyn_editor_assets' );
 
-      function wpfuncsDd_grid_with_large_round_imagesfuncvbT_editor_assets() {
+      function wpfuncOjV_grid_with_large_round_imagesfuncRyn_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncsDd_grid_with_large_round_imagesfuncvbT_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncOjV_grid_with_large_round_imagesfuncRyn_block_assets' );
 
-    function wpfuncsDd_grid_with_large_round_imagesfuncvbT_block_assets() {
+    function wpfuncOjV_grid_with_large_round_imagesfuncRyn_block_assets() {
       $args = array(
         'handle' => 'wp-grid-with-large-round-images-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

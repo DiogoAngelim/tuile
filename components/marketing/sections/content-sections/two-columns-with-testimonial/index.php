@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncMGf_two_columns_with_testimonialfuncOAM_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncOgS_two_columns_with_testimonialfuncrRj_editor_assets' );
 
-      function wpfuncMGf_two_columns_with_testimonialfuncOAM_editor_assets() {
+      function wpfuncOgS_two_columns_with_testimonialfuncrRj_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncMGf_two_columns_with_testimonialfuncOAM_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncOgS_two_columns_with_testimonialfuncrRj_block_assets' );
 
-    function wpfuncMGf_two_columns_with_testimonialfuncOAM_block_assets() {
+    function wpfuncOgS_two_columns_with_testimonialfuncrRj_block_assets() {
       $args = array(
         'handle' => 'wp-two-columns-with-testimonial-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

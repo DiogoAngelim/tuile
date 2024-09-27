@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncqSo_side_by_side_on_brandfuncpxu_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncQOa_side_by_side_on_brandfunczEB_editor_assets' );
 
-      function wpfuncqSo_side_by_side_on_brandfuncpxu_editor_assets() {
+      function wpfuncQOa_side_by_side_on_brandfunczEB_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncqSo_side_by_side_on_brandfuncpxu_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncQOa_side_by_side_on_brandfunczEB_block_assets' );
 
-    function wpfuncqSo_side_by_side_on_brandfuncpxu_block_assets() {
+    function wpfuncQOa_side_by_side_on_brandfunczEB_block_assets() {
       $args = array(
         'handle' => 'wp-side-by-side-on-brand-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

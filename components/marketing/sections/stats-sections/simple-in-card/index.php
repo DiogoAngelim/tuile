@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncJvM_simple_in_cardfuncJMm_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncZNv_simple_in_cardfunceIB_editor_assets' );
 
-      function wpfuncJvM_simple_in_cardfuncJMm_editor_assets() {
+      function wpfuncZNv_simple_in_cardfunceIB_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncJvM_simple_in_cardfuncJMm_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncZNv_simple_in_cardfunceIB_block_assets' );
 
-    function wpfuncJvM_simple_in_cardfuncJMm_block_assets() {
+    function wpfuncZNv_simple_in_cardfunceIB_block_assets() {
       $args = array(
         'handle' => 'wp-simple-in-card-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

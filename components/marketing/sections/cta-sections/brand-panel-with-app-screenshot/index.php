@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncQSr_brand_panel_with_app_screenshotfuncQbm_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncYYn_brand_panel_with_app_screenshotfuncJKh_editor_assets' );
 
-      function wpfuncQSr_brand_panel_with_app_screenshotfuncQbm_editor_assets() {
+      function wpfuncYYn_brand_panel_with_app_screenshotfuncJKh_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncQSr_brand_panel_with_app_screenshotfuncQbm_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncYYn_brand_panel_with_app_screenshotfuncJKh_block_assets' );
 
-    function wpfuncQSr_brand_panel_with_app_screenshotfuncQbm_block_assets() {
+    function wpfuncYYn_brand_panel_with_app_screenshotfuncJKh_block_assets() {
       $args = array(
         'handle' => 'wp-brand-panel-with-app-screenshot-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

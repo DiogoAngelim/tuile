@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncOWp_off_white_gridfuncIgs_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfunczeB_off_white_gridfuncnnT_editor_assets' );
 
-      function wpfuncOWp_off_white_gridfuncIgs_editor_assets() {
+      function wpfunczeB_off_white_gridfuncnnT_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncOWp_off_white_gridfuncIgs_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfunczeB_off_white_gridfuncnnT_block_assets' );
 
-    function wpfuncOWp_off_white_gridfuncIgs_block_assets() {
+    function wpfunczeB_off_white_gridfuncnnT_block_assets() {
       $args = array(
         'handle' => 'wp-off-white-grid-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

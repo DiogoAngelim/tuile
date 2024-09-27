@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncRib_centered_accordionfuncxlG_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncZDW_centered_accordionfuncVBN_editor_assets' );
 
-      function wpfuncRib_centered_accordionfuncxlG_editor_assets() {
+      function wpfuncZDW_centered_accordionfuncVBN_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncRib_centered_accordionfuncxlG_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncZDW_centered_accordionfuncVBN_block_assets' );
 
-    function wpfuncRib_centered_accordionfuncxlG_block_assets() {
+    function wpfuncZDW_centered_accordionfuncVBN_block_assets() {
       $args = array(
         'handle' => 'wp-centered-accordion-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

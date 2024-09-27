@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncWqZ_simple_with_select_menu_darkfuncLfT_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncEhY_simple_with_select_menu_darkfuncaTJ_editor_assets' );
 
-      function wpfuncWqZ_simple_with_select_menu_darkfuncLfT_editor_assets() {
+      function wpfuncEhY_simple_with_select_menu_darkfuncaTJ_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncWqZ_simple_with_select_menu_darkfuncLfT_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncEhY_simple_with_select_menu_darkfuncaTJ_block_assets' );
 
-    function wpfuncWqZ_simple_with_select_menu_darkfuncLfT_block_assets() {
+    function wpfuncEhY_simple_with_select_menu_darkfuncaTJ_block_assets() {
       $args = array(
         'handle' => 'wp-simple-with-select-menu-dark-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

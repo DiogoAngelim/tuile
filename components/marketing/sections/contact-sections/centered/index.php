@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncYXX_centeredfuncaKH_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncReb_centeredfuncyUt_editor_assets' );
 
-      function wpfuncYXX_centeredfuncaKH_editor_assets() {
+      function wpfuncReb_centeredfuncyUt_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncYXX_centeredfuncaKH_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncReb_centeredfuncyUt_block_assets' );
 
-    function wpfuncYXX_centeredfuncaKH_block_assets() {
+    function wpfuncReb_centeredfuncyUt_block_assets() {
       $args = array(
         'handle' => 'wp-centered-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

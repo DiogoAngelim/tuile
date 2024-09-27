@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncZOH_two_columns_with_description_on_darkfuncALV_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncUej_two_columns_with_description_on_darkfuncAiL_editor_assets' );
 
-      function wpfuncZOH_two_columns_with_description_on_darkfuncALV_editor_assets() {
+      function wpfuncUej_two_columns_with_description_on_darkfuncAiL_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncZOH_two_columns_with_description_on_darkfuncALV_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncUej_two_columns_with_description_on_darkfuncAiL_block_assets' );
 
-    function wpfuncZOH_two_columns_with_description_on_darkfuncALV_block_assets() {
+    function wpfuncUej_two_columns_with_description_on_darkfuncAiL_block_assets() {
       $args = array(
         'handle' => 'wp-two-columns-with-description-on-dark-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

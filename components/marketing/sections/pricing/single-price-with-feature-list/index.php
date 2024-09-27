@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncydf_single_price_with_feature_listfuncJbj_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncPCA_single_price_with_feature_listfuncaTV_editor_assets' );
 
-      function wpfuncydf_single_price_with_feature_listfuncJbj_editor_assets() {
+      function wpfuncPCA_single_price_with_feature_listfuncaTV_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncydf_single_price_with_feature_listfuncJbj_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncPCA_single_price_with_feature_listfuncaTV_block_assets' );
 
-    function wpfuncydf_single_price_with_feature_listfuncJbj_block_assets() {
+    function wpfuncPCA_single_price_with_feature_listfuncaTV_block_assets() {
       $args = array(
         'handle' => 'wp-single-price-with-feature-list-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

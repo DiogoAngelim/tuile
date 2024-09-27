@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncLda_three_columnsfuncvNT_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncpgX_three_columnsfuncmeM_editor_assets' );
 
-      function wpfuncLda_three_columnsfuncvNT_editor_assets() {
+      function wpfuncpgX_three_columnsfuncmeM_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncLda_three_columnsfuncvNT_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncpgX_three_columnsfuncmeM_block_assets' );
 
-    function wpfuncLda_three_columnsfuncvNT_block_assets() {
+    function wpfuncpgX_three_columnsfuncmeM_block_assets() {
       $args = array(
         'handle' => 'wp-three-columns-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncswx_simple_on_brandfuncmGT_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncduV_simple_on_brandfunchyQ_editor_assets' );
 
-      function wpfuncswx_simple_on_brandfuncmGT_editor_assets() {
+      function wpfuncduV_simple_on_brandfunchyQ_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncswx_simple_on_brandfuncmGT_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncduV_simple_on_brandfunchyQ_block_assets' );
 
-    function wpfuncswx_simple_on_brandfuncmGT_block_assets() {
+    function wpfuncduV_simple_on_brandfunchyQ_block_assets() {
       $args = array(
         'handle' => 'wp-simple-on-brand-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncHMr_with_large_imagesfuncLBB_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncZqr_with_large_imagesfuncHKd_editor_assets' );
 
-      function wpfuncHMr_with_large_imagesfuncLBB_editor_assets() {
+      function wpfuncZqr_with_large_imagesfuncHKd_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncHMr_with_large_imagesfuncLBB_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncZqr_with_large_imagesfuncHKd_block_assets' );
 
-    function wpfuncHMr_with_large_imagesfuncLBB_block_assets() {
+    function wpfuncZqr_with_large_imagesfuncHKd_block_assets() {
       $args = array(
         'handle' => 'wp-with-large-images-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

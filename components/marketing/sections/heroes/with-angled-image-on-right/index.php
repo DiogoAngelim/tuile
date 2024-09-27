@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncKbu_with_angled_image_on_rightfuncSOv_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncDaF_with_angled_image_on_rightfuncMdw_editor_assets' );
 
-      function wpfuncKbu_with_angled_image_on_rightfuncSOv_editor_assets() {
+      function wpfuncDaF_with_angled_image_on_rightfuncMdw_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncKbu_with_angled_image_on_rightfuncSOv_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncDaF_with_angled_image_on_rightfuncMdw_block_assets' );
 
-    function wpfuncKbu_with_angled_image_on_rightfuncSOv_block_assets() {
+    function wpfuncDaF_with_angled_image_on_rightfuncMdw_block_assets() {
       $args = array(
         'handle' => 'wp-with-angled-image-on-right-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

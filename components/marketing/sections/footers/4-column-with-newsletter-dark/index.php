@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncoVV_4_column_with_newsletter_darkfuncWDG_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncadh_4_column_with_newsletter_darkfuncLQo_editor_assets' );
 
-      function wpfuncoVV_4_column_with_newsletter_darkfuncWDG_editor_assets() {
+      function wpfuncadh_4_column_with_newsletter_darkfuncLQo_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncoVV_4_column_with_newsletter_darkfuncWDG_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncadh_4_column_with_newsletter_darkfuncLQo_block_assets' );
 
-    function wpfuncoVV_4_column_with_newsletter_darkfuncWDG_block_assets() {
+    function wpfuncadh_4_column_with_newsletter_darkfuncLQo_block_assets() {
       $args = array(
         'handle' => 'wp-4-column-with-newsletter-dark-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncUkG_split_brand_panelfuncIgf_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncfHW_split_brand_panelfuncmez_editor_assets' );
 
-      function wpfuncUkG_split_brand_panelfuncIgf_editor_assets() {
+      function wpfuncfHW_split_brand_panelfuncmez_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncUkG_split_brand_panelfuncIgf_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncfHW_split_brand_panelfuncmez_block_assets' );
 
-    function wpfuncUkG_split_brand_panelfuncIgf_block_assets() {
+    function wpfuncfHW_split_brand_panelfuncmez_block_assets() {
       $args = array(
         'handle' => 'wp-split-brand-panel-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

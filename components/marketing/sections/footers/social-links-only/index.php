@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfunciBG_social_links_onlyfuncfqS_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncsWe_social_links_onlyfunchIN_editor_assets' );
 
-      function wpfunciBG_social_links_onlyfuncfqS_editor_assets() {
+      function wpfuncsWe_social_links_onlyfunchIN_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfunciBG_social_links_onlyfuncfqS_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncsWe_social_links_onlyfunchIN_block_assets' );
 
-    function wpfunciBG_social_links_onlyfuncfqS_block_assets() {
+    function wpfuncsWe_social_links_onlyfunchIN_block_assets() {
       $args = array(
         'handle' => 'wp-social-links-only-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

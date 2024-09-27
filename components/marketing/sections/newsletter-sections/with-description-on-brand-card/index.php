@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncNGC_with_description_on_brand_cardfuncAQg_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncTVm_with_description_on_brand_cardfuncxcN_editor_assets' );
 
-      function wpfuncNGC_with_description_on_brand_cardfuncAQg_editor_assets() {
+      function wpfuncTVm_with_description_on_brand_cardfuncxcN_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncNGC_with_description_on_brand_cardfuncAQg_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncTVm_with_description_on_brand_cardfuncxcN_block_assets' );
 
-    function wpfuncNGC_with_description_on_brand_cardfuncAQg_block_assets() {
+    function wpfuncTVm_with_description_on_brand_cardfuncxcN_block_assets() {
       $args = array(
         'handle' => 'wp-with-description-on-brand-card-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

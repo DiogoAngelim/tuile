@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncoCk_with_sign_in_formfuncLjn_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncOiW_with_sign_in_formfuncvJj_editor_assets' );
 
-      function wpfuncoCk_with_sign_in_formfuncLjn_editor_assets() {
+      function wpfuncOiW_with_sign_in_formfuncvJj_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncoCk_with_sign_in_formfuncLjn_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncOiW_with_sign_in_formfuncvJj_block_assets' );
 
-    function wpfuncoCk_with_sign_in_formfuncLjn_block_assets() {
+    function wpfuncOiW_with_sign_in_formfuncvJj_block_assets() {
       $args = array(
         'handle' => 'wp-with-sign-in-form-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncomc_4x2_grid_on_brandfuncMkw_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncAVv_4x2_grid_on_brandfuncHIH_editor_assets' );
 
-      function wpfuncomc_4x2_grid_on_brandfuncMkw_editor_assets() {
+      function wpfuncAVv_4x2_grid_on_brandfuncHIH_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncomc_4x2_grid_on_brandfuncMkw_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncAVv_4x2_grid_on_brandfuncHIH_block_assets' );
 
-    function wpfuncomc_4x2_grid_on_brandfuncMkw_block_assets() {
+    function wpfuncAVv_4x2_grid_on_brandfuncHIH_block_assets() {
       $args = array(
         'handle' => 'wp-4x2-grid-on-brand-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

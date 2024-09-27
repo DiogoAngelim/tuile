@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncldT_grid_with_offset_iconsfunciNX_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncDNN_grid_with_offset_iconsfuncYsP_editor_assets' );
 
-      function wpfuncldT_grid_with_offset_iconsfunciNX_editor_assets() {
+      function wpfuncDNN_grid_with_offset_iconsfuncYsP_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncldT_grid_with_offset_iconsfunciNX_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncDNN_grid_with_offset_iconsfuncYsP_block_assets' );
 
-    function wpfuncldT_grid_with_offset_iconsfunciNX_block_assets() {
+    function wpfuncDNN_grid_with_offset_iconsfuncYsP_block_assets() {
       $args = array(
         'handle' => 'wp-grid-with-offset-icons-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

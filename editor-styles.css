@@ -31,7 +31,18 @@
     all: unset !important;
 }
 
-.is-root-container > div {
+.is-root-container>div {
     all: unset !important;
 }
 
+[aria-expanded="false"]+* {
+    display: none;
+}
+
+* {
+    --wp--preset--font-size--x-large: 14px;
+}
+
+img.h-10 {
+    height: 2.5rem !important;
+}

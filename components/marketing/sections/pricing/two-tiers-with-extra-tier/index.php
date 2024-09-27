@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncIif_two_tiers_with_extra_tierfuncauk_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncZoO_two_tiers_with_extra_tierfuncUik_editor_assets' );
 
-      function wpfuncIif_two_tiers_with_extra_tierfuncauk_editor_assets() {
+      function wpfuncZoO_two_tiers_with_extra_tierfuncUik_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncIif_two_tiers_with_extra_tierfuncauk_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncZoO_two_tiers_with_extra_tierfuncUik_block_assets' );
 
-    function wpfuncIif_two_tiers_with_extra_tierfuncauk_block_assets() {
+    function wpfuncZoO_two_tiers_with_extra_tierfuncUik_block_assets() {
       $args = array(
         'handle' => 'wp-two-tiers-with-extra-tier-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),

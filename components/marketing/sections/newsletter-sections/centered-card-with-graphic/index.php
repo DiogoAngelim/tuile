@@ -11,9 +11,9 @@
       exit;
     }
 
-    add_action( 'enqueue_block_editor_assets', 'wpfuncmMb_centered_card_with_graphicfuncZbq_editor_assets' );
+    add_action( 'enqueue_block_editor_assets', 'wpfuncRsS_centered_card_with_graphicfuncnGw_editor_assets' );
 
-      function wpfuncmMb_centered_card_with_graphicfuncZbq_editor_assets() {
+      function wpfuncRsS_centered_card_with_graphicfuncnGw_editor_assets() {
       $filepath = plugin_dir_path(__FILE__) . 'block.build.js';
       $version = file_exists($filepath) ? filemtime($filepath) : time();
 
@@ -37,9 +37,9 @@
       );
     }
 
-    add_action( 'enqueue_block_assets', 'wpfuncmMb_centered_card_with_graphicfuncZbq_block_assets' );
+    add_action( 'enqueue_block_assets', 'wpfuncRsS_centered_card_with_graphicfuncnGw_block_assets' );
 
-    function wpfuncmMb_centered_card_with_graphicfuncZbq_block_assets() {
+    function wpfuncRsS_centered_card_with_graphicfuncnGw_block_assets() {
       $args = array(
         'handle' => 'wp-centered-card-with-graphic-frontend',
         'src'    => plugins_url( 'style.css', __FILE__ ),
